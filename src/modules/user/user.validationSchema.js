@@ -8,7 +8,7 @@ import { allSystemRoles } from "../../utils/systemRoles.js";
 export const updateUserSchema = {
 
     body: Joi.object({
-        name: Joi.string().min(3),
+        name: Joi.string().min(6),
         password: Joi. string().min(6)
     }).required().options({presence: 'optional'})
 
